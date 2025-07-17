@@ -75,6 +75,10 @@ terraform state rm aws_vpc_security_group_ingress_rule.example
 
 * Import all AWS resources created in Step 1 into a new Terraform state file. 
 
+```sh
+terraform import 'aws_iam_user.lb[0]' ready-anteater-kplabs-0
+```
+
 * Ensure the existing Terraform configuration matches the actual resources in AWS and that no actual resources are deleted.
 
 #### 6. Create New Resource
