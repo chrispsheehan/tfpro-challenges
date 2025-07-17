@@ -62,6 +62,13 @@ terraform output sg_rule_id >> sg-combined.txt
 
 * Remove the `aws_security_group` and `aws_vpc_security_group_ingress_rule` resource type related code from your  Terraform configuration.
 
+commands
+```sh
+terraform state list
+terraform state rm aws_security_group.example
+terraform state rm aws_vpc_security_group_ingress_rule.example
+```
+
 * Delete the `terraform.tfstate` file and it's backup (terraform.tfstate.backup), if available.
 
 #### 5. Import ALL resources
