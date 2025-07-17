@@ -1,6 +1,6 @@
 
-variable "environement" {
-  type = number
+variable "environment" {
+  type = string
 }
 
 variable "s3_buckets" {
