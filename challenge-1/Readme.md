@@ -49,6 +49,13 @@ Save the output values to files as per the below table
 | Security Group ID  | sg-combined.txt        | 
 | VPC Ingress Rule ID  | sg-combined.txt       | 
 
+commands (note >> for combined!)
+```sh
+terraform output s3_buckets > s3.txt
+terraform output user_names > iam-users.txt
+terraform output sg_id > sg-combined.txt   
+terraform output sg_rule_id >> sg-combined.txt
+```
 
 
 #### 4. Delete the Resource and Files
