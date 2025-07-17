@@ -4,7 +4,7 @@ variable "environment" {
 }
 
 variable "s3_buckets" {
-    type = list(string)
+  type = list(string)
 }
 
 variable "sg_name" {
